@@ -594,8 +594,6 @@ int main()
 		TorusWhole sprial5(0.1f, 0.3f, 30, 30);
 		sprial5.Draw();
 
-		// render white plane as paper of notebook
-
 		// render d4 dice as triangle base pyramid 
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, dice);
@@ -658,7 +656,7 @@ void processInput(GLFWwindow* window)
 	// Toggle perspective and orthographic projection matrix
 	if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS) // P is toggle (default false)
 		orthoView = false;
-	if (glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS) // P is toggle (default false)
+	if (glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS) // O is toggle (default false)
 		orthoView = true;
 }
 
